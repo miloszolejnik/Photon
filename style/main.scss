@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    body{
+        overflow-x: hidden;
+        font-family: 'Azeret Mono', monospace;
+        width: 100vw;
+        header{
+            display: flex;
+            flex-direction: column;
+            min-height: 30vh;
+            justify-content: center;
+            align-items: center;
+            h2{
+                #logo{
+                    padding: 2rem;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .search-form{
+                padding: 2rem;
+                display: flex;
+                input{
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    width: 100%;
+                    border: none;
+                    border: solid 2px rgb(64, 75, 134);
+                }
+                button{
+                    border: none;
+                    padding: 0.5rem;
+                    font-size: 1rem;
+                    background-color: rgb(64, 75, 134);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+        main{
+            .gallery{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                padding: 2rem 0rem;
+                width: 80%;
+                margin: auto;
+                row-gap: 5rem;
+                column-gap: 3rem;
+                @media (max-width: 1000px){
+                    width: 100%;
+                    column-gap: 0;
+                }   
+                .gallery-img{
+                    img{
+                        max-width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .gallery-info{
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+                        color: gray;
+                        padding: 0.5rem 0rem;
+                        a{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-btn{
+            min-height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .more{
+                padding: 1rem 3rem;
+                background-color: rgb(64, 75, 134);
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

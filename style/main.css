@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  overflow-x: hidden;
+  font-family: 'Azeret Mono', monospace;
+  width: 100vw;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 30vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body header h2 #logo {
+  padding: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+html body header .search-form {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body header .search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border: solid 2px #404b86;
+}
+
+html body header .search-form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #404b86;
+  color: white;
+  cursor: pointer;
+}
+
+html body main .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+@media (max-width: 1000px) {
+  html body main .gallery {
+    width: 100%;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+}
+
+html body main .gallery .gallery-img img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html body main .gallery .gallery-img .gallery-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: gray;
+  padding: 0.5rem 0rem;
+}
+
+html body main .gallery .gallery-img .gallery-info a {
+  color: gray;
+}
+
+html body .nav-btn {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .nav-btn .more {
+  padding: 1rem 3rem;
+  background-color: #404b86;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */
